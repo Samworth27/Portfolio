@@ -1,0 +1,72 @@
+body{
+    background-color:#141711;
+    color:white
+}
+
+.header-main{
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 8px;
+    margin: auto;
+    text-align: center;
+    background-color:#856A5D;
+    margin-bottom: 0px;
+    width: 1000px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: stretch;
+    background-color:#141711;
+}
+
+.nav-item{
+    margin: 0px;
+    color: black;
+    border-width: 10px;
+    background-color:#6C6F7D;
+    flex-grow: 1;
+}
+
+.title{
+    padding-top: 200px;
+}
+
+main{
+    margin-top: 0px;
+}
+.main-items{
+    display: flex;
+    background-color:#42444C;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.about-me{
+    flex: 100%;
+    padding: 50px;
+}
+.showcase{
+    margin: 10px;
+    color:black;
+    background-color: #EBCFB2;
+    width: 400px;
+    height: 400px;
+}
+
+.contact{
+    flex:100%;
+    padding:50px;
+}
+footer{
+    text-align: center;
+    background-color:#856A5D;
+}
+
+
+@media (max-width: 1000px){
+    .header-main{
+        width: auto;
+    }
+}
