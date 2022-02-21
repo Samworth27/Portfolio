@@ -1,19 +1,16 @@
+$colour1:#141711;
+
 html {
-    scroll-padding-top: 450px; /* height of sticky header */
+    scroll-padding-top: 355px; /* height of sticky header */
   }
 
 body{
-    background-color:#141711;
+    background-color:$colour1;
     color:white;
     margin-top: 0px;
-    width: 1200px;
+    width: 1000px;
     margin: auto;
 }
-
-
-
-
-/*HEADER STYLES*/
 
 .header-main{
     position: -webkit-sticky !important;
@@ -23,62 +20,33 @@ body{
     text-align: center;
     background-color:#856A5D;
     margin-bottom: 0px;
-    border-radius: 0px 0px 10px 10px;
 }
-
-/*Navigation Menu*/
 
 .nav-menu{
     padding-top: 20px;
     display: flex;
     justify-content: stretch;
-    background-color:#141711;
-    border-color: #141711;
+    background-color:$colour1;
 }
 
 .nav-item{
+    border{
+        style: solid;
+        color: $colour1
+    }
     margin: 0px;
     background-color:#6C6F7D;
     flex-grow: 1;
-    border-radius: 10px 10px 0px 0px;
-    
 }
-
-.nav-item a{
-    display: block;
-    font-size: 30px;
-    text-decoration: none;
-    color: #141711;
-    
-}
-
-.nav-item:hover{
-    background-color: #856A5D;
-}
-
-/*Title Box*/
 
 .title{
-    padding-top: 10vh;
-    font-size: 5vw
+    padding-top: 200px;
 }
-
-.title h1{
-    margin: 0;
-}
-
-
-
-
-
-
 
 main{
-    border-radius: 10px;
+    margin-top: 0px;
 }
-
 .main-items{
-    border-radius: 10px;
     display: flex;
     background-color:#42444C;
     justify-content: center;
@@ -90,13 +58,6 @@ main{
     flex: 100%;
     padding: 50px;
 }
-
-.showcase-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .showcase{
     margin: 10px;
     color:black;
@@ -109,24 +70,14 @@ main{
     flex:100%;
     padding:50px;
 }
-
 footer{
-    position: sticky;
-    bottom: 0px;
     text-align: center;
     background-color:#856A5D;
 }
 
 
-
-
-
-
-@media (max-width: 1300px){
+@media (max-width: 1000px){
     body{
         width: 80%;
-    }
-    .title{
-        padding-top: 20vh;
     }
 }
