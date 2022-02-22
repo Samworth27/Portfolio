@@ -1,8 +1,21 @@
+/*
+// COLOUR PALLET
+//
+// #494949 - Davys Gray
+// #FF4F00 - International Orange
+// #7C7A7A - Sonic Silver
+// #F0EDEE - Cultured
+// #90DDF0 - Middle Blue
+//
+*/
+
+
+
 .container {
     grid-template-columns: minmax(20vmin, 20vmin) auto minmax(20vmin, 20vmin); 
     grid-template-rows: minmax(20vmin, 20vmin) auto minmax(20vmin, 20vmin); 
     display: grid;
-    gap: 0px 0px;
+    gap: 10px 10px;
     width: 95vw;
     height: 95vh;
     margin: auto;
@@ -11,12 +24,17 @@
 
 .landing{
     grid-template-columns: minmax(20vmin, 40vmin) 1fr minmax(20vmin, 40vmin); 
-    grid-template-rows: minmax(20vmin, 40vmin) 1fr minmax(20vmin, 40vmin); 
+    grid-template-rows: minmax(20vmin, 40vmin) 1fr minmax(20vmin, 40vmin);
+}
+
+.title{
+    font-size: 10vmin;
+    position:fixed;
 }
 
 .content {
     grid-area: 2 / 2 / 3 / 3;
-    background-color: #7C7A7A;
+    background-color:#7C7A7A;
 }
 
 .blog {
