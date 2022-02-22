@@ -33,15 +33,23 @@
 }
 
 .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: 2 / 2 / 3 / 3;
     background-color:#7C7A7A;
 }
 
 .blog {
     grid-area: 1 / 2 / 4 / 2;
+    flex-direction: column;
+    overflow-y: scroll;
 
 }
-
+.blog article{
+    padding: 4em;
+    padding-bottom: 6em;
+}
 .showcase {
     grid-area:2 / 1 / 2 / 4
 }
@@ -66,6 +74,8 @@
     mask-image: radial-gradient(black, transparent);
 }
 .nav-item {
+    position: sticky;
+    top: 0;
     background-color: grey;
     border-radius:50%;
     overflow:hidden;
