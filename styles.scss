@@ -1,0 +1,110 @@
+$colour-dark-1:#28231A;     //Zeus
+$colour-dark-2:#4E3D23;     //roko
+$colour-mid-1:#8A7F62;      //Clay Creek
+$colour-light-1:#CCCDD4;    //Ghost
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+$sans-serif:'Anton', sans-serif;
+
+
+/* Reset margin and padding for all elements to 0*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $colour-dark-1;
+}
+
+/*common attributes for page header and footer */
+.page{
+    position: sticky;
+    padding: 1em 0em;
+    background-color: $colour-dark-1;
+}
+
+
+
+/* Header */
+header.page{
+
+    /*set sticky position*/
+    top:0;
+
+    .nav-menu{
+        display: flex;
+        justify-content: space-around;
+
+        a{
+            font-family: $sans-serif;
+            color: $colour-light-1;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: $colour-mid-1;
+        }
+    }
+
+
+}
+
+
+
+/* Content */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    section{
+        padding: 2em;
+    }
+}
+  
+img {
+    width: 80vw;
+    border-radius: 20px;
+}
+
+
+
+
+/* Footer */
+
+footer.page {
+    /*set sticky position*/
+    bottom: 0;
+
+    .footer-links {
+        display: flex;
+        justify-content: space-around;
+        height: 5vh;
+    
+        a {
+            width:5vh;
+
+            svg {
+                fill: $colour-light-1;
+            }
+        }
+
+        a:hover {
+
+            svg {
+                fill: $colour-mid-1;
+            }
+        }
+    }
+}
+
+
+/* Page Specific */
+
+.contact .footer-links{
+    flex-direction: column;
+    padding-left: 2em;
+}

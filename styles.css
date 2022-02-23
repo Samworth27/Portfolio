@@ -1,95 +1,104 @@
-/*
-// COLOUR PALLET
-//
-// #494949 - Davys Gray
-// #FF4F00 - International Orange
-// #7C7A7A - Sonic Silver
-// #F0EDEE - Cultured
-// #90DDF0 - Middle Blue
-//
-*/
-
-:root {
-    --colour1:#716A57; /*Shadow*/
-    --colour2:#DFB632; /*Gold Metallic*/
-    --colour3:#7B8291; /*Roman Silver*/
-    --colour4:#71652B; /*Antique Bronze*/
-    --colour5:#302c29; /*Jet*/
-
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+/* Reset margin and padding for all elements to 0*/
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding:0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background: url('PXL_20211221_065422347.jpg');
-    background-color:var(--colour1);
-    background-size: cover;
-    background-position: 50% 50%;
-    height: 100vh;
+body {
+  background-color: #28231A;
 }
 
-header{
-    background-color:gray ;
+/*common attributes for page header and footer */
+.page {
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 1em 0em;
+  background-color: #28231A;
 }
 
-
-.nav-list{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    flex: 1;
-}
-.nav-list a{
-    padding: 0.25em 0.5em;
+/* Header */
+header.page {
+  /*set sticky position*/
+  top: 0;
 }
 
-/* Move Active Page */
-.home .nav-home {
-    background-color: white;
-    /* order:-1; */
-    /* margin-left:auto; */
+header.page .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.about .nav-about {
-    background-color: white;
-    /* order:-1; */
-    /* margin-left:auto; */
+header.page .nav-menu a {
+  font-family: "Anton", sans-serif;
+  color: #CCCDD4;
+  text-decoration: none;
 }
 
-.showcase .nav-showcase {
-    background-color: white;
-    /* order:-1; */
-    /* margin-left:auto; */
+header.page .nav-menu a:hover {
+  color: #8A7F62;
 }
 
-.blog .nav-blog {
-    background-color: white;
-    /* order:-1; */
-    /* margin-left:auto; */
+/* Content */
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.contact .nav-contact {
-    background-color: white;
-    /* order:-1; */
-    /* margin-left:auto; */
+main section {
+  padding: 2em;
 }
 
-@media only screen and (min-width:1024px) {
-    .nav-list a{
-        text-decoration: none;
-        font-size: 2em;
-        border: 1px solid black;
-        background-color: var(--colour2);
-        padding:0.25em 1em;
-        text-decoration: none;
-        color: #141711;
-        flex:1;
-    }
+img {
+  width: 80vw;
+  border-radius: 20px;
 }
 
+/* Footer */
+footer.page {
+  /*set sticky position*/
+  bottom: 0;
+}
 
+footer.page .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 5vh;
+}
 
+footer.page .footer-links a {
+  width: 5vh;
+}
+
+footer.page .footer-links a svg {
+  fill: #CCCDD4;
+}
+
+footer.page .footer-links a:hover svg {
+  fill: #8A7F62;
+}
+
+/* Page Specific */
+.contact .footer-links {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 2em;
+}
+/*# sourceMappingURL=styles.css.map */
