@@ -37,11 +37,12 @@
     justify-content: center;
     align-items: center;
     grid-area: 2 / 2 / 3 / 3;
-    background-color:#7C7A7A;
+    background-color:#7c7a7a4f;
 }
 
 .blog {
     grid-area: 1 / 2 / 4 / 2;
+    justify-content:flex-start ;
     flex-direction: column;
     overflow-y: scroll;
 
@@ -70,7 +71,7 @@
 }
 
 .nav-mask{
-    -webkit-mask-image: radial-gradient(black, transparent at 25%);
+    -webkit-mask-image: radial-gradient(black , transparent at 25%);
     mask-image: radial-gradient(black, transparent);
 }
 .nav-item {
@@ -79,15 +80,22 @@
     background-color: grey;
     border-radius:50%;
     overflow:hidden;
-    -webkit-mask-image: radial-gradient(black, transparent);
-    mask-image: radial-gradient(black, transparent);
+    -webkit-mask-image: radial-gradient(black 50%, transparent 70%);
+    mask-image: radial-gradient(black 50%, transparent 70%);
+}
+
+.nav-item h1{
 }
 
 .nav-item a{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
     font-size: 30px;
     text-decoration: none;
     color: #141711;
+    height: 100%;
+    width: 100%;
     
 }
 
@@ -103,4 +111,7 @@
 
 body{
     background-color: #494949;
+    background: url('PXL_20211221_065422347.jpg');
+    background-size: cover;
+    background-position: center;
 }
