@@ -24,18 +24,18 @@ body {
 
 /*common attributes for page header and footer */
 .page{
-    position: sticky;
+    height:fit-content;
     padding: 1em 0em;
-    background-color: $colour-dark-1;
+    background-color: $colour-dark-2;
 }
 
 
 
-/* Header */
-page-header{
-
-    /*set sticky position*/
-    top:0;
+ /* Header */
+header.page{
+    position: sticky;
+    top: 0;
+     /*set sticky position*/
 
     .nav-menu{
         display: flex;
@@ -86,9 +86,12 @@ img {
 
 /* Footer */
 
-page-footer {
-    /*set sticky position*/
+footer.page {
+     /*set sticky position*/
+    position: sticky;
     bottom: 0;
+    padding:2em 0;
+    background-color: $colour-dark-2;
 
     display: flex;
     flex-wrap: wrap;
