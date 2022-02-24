@@ -33,12 +33,6 @@ body {
     background-color: $colour-dark-2;
 }
 
-.hero{
-    background-color: $colour-mid-1;
-    width: 100vw;
-    align-self:center;
-}
-
 
  /* Header */
 header.page{
@@ -69,17 +63,26 @@ header.page{
 /* Content */
 
 main {
+
     display: flex;
     flex-direction: column;
+    flex-basis: content;
     align-items: center;
 
-    header{
-        h1{
-            font-family: teeshirt,sans-serif;
-            color: $colour-light-1;
-            font-weight: 200;
-        }
+    .hero{
+        background-color: $colour-mid-1;
+        width: 100vw;
+
     }
+
+    h1{
+        margin: auto;
+        padding: 0.5em 0;
+        font-family: teeshirt,sans-serif;
+        color: $colour-light-1;
+        font-weight: 200;
+    }
+
     h2{
         padding-left: 20vw;
         padding-top: 1em;
@@ -87,6 +90,7 @@ main {
         font-family: $sans-serif;
         font-weight: 100;
     }
+
     section{
         padding: 2em;
         color: $colour-light-1;
