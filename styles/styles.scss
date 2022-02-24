@@ -4,8 +4,12 @@ $colour-mid-1:#8A7F62;      //Clay Creek
 $colour-light-1:#CCCDD4;    //Ghost
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url("https://use.typekit.net/qdq3ntt.css");
 $sans-serif:'Anton', sans-serif;
-
+$serif:'Cinzel', serif;
+$cursive:'Comfortaa', 'Anton', cursive;
 
 /* Reset margin and padding for all elements to 0*/
 * {
@@ -28,7 +32,7 @@ body {
 
 
 /* Header */
-header.page{
+page-header{
 
     /*set sticky position*/
     top:0;
@@ -60,6 +64,13 @@ main {
     flex-direction: column;
     align-items: center;
 
+    header{
+        h1{
+            font-family: teeshirt,sans-serif;
+            color: $colour-light-1;
+            font-weight: 200;
+        }
+    }
     section{
         padding: 2em;
     }
@@ -75,11 +86,16 @@ img {
 
 /* Footer */
 
-footer.page {
+page-footer {
     /*set sticky position*/
     bottom: 0;
 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     .footer-links {
+        flex:0 0 100%;
         display: flex;
         justify-content: space-around;
         height: 5vh;
@@ -99,12 +115,28 @@ footer.page {
             }
         }
     }
+
+    .copyright{
+        margin-top: 1em;
+        display: flex;
+        align-items: center;
+        svg{
+            width: 1em;
+            height: 1em;
+        }
+    }
 }
 
 
 /* Page Specific */
 
-.contact .footer-links{
-    flex-direction: column;
-    padding-left: 2em;
+.contact page-footer{
+    .hidden{
+        display: none;
+    }
+    .footer-links{
+        height: fit-content;
+        flex-direction: column;
+        padding-left: 2em;
+    }
 }
