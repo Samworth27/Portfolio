@@ -20,7 +20,7 @@ class PageFooter extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
             <footer class="page">
-                <section class="footer-links">
+                <section class="contact-links">
                     <a href="">
                         <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <title>LinkedIn</title>

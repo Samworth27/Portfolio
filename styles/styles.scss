@@ -19,7 +19,11 @@ $cursive:'Comfortaa', 'Anton', cursive;
 }
 
 body {
+    //height: 100vh;
     background-color: $colour-dark-1;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: space-between;
 }
 
 /*common attributes for page header and footer */
@@ -29,6 +33,11 @@ body {
     background-color: $colour-dark-2;
 }
 
+.hero{
+    background-color: $colour-mid-1;
+    width: 100vw;
+    align-self:center;
+}
 
 
  /* Header */
@@ -71,8 +80,17 @@ main {
             font-weight: 200;
         }
     }
+    h2{
+        padding-left: 20vw;
+        padding-top: 1em;
+        color: $colour-light-1;
+        font-family: $sans-serif;
+        font-weight: 100;
+    }
     section{
         padding: 2em;
+        color: $colour-light-1;
+        font-family: $serif;
     }
 }
   
@@ -80,9 +98,6 @@ img {
     width: 80vw;
     border-radius: 20px;
 }
-
-
-
 
 /* Footer */
 
@@ -97,28 +112,6 @@ footer.page {
     flex-wrap: wrap;
     justify-content: center;
 
-    .footer-links {
-        flex:0 0 100%;
-        display: flex;
-        justify-content: space-around;
-        height: 5vh;
-    
-        a {
-            width:5vh;
-
-            svg {
-                fill: $colour-light-1;
-            }
-        }
-
-        a:hover {
-
-            svg {
-                fill: $colour-mid-1;
-            }
-        }
-    }
-
     .copyright{
         margin-top: 1em;
         display: flex;
@@ -126,20 +119,64 @@ footer.page {
         svg{
             width: 1em;
             height: 1em;
+            fill:black;
         }
     }
 }
 
 
+.contact-links {
+    flex:0 0 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 5vh;
+
+    a {
+        width:5vh;
+
+        svg {
+            fill: $colour-light-1;
+        }
+    }
+
+    a:hover {
+
+        svg {
+            fill: $colour-mid-1;
+        }
+    }
+}
+
 /* Page Specific */
 
-.contact page-footer{
-    .hidden{
-        display: none;
+.contact{
+
+    /*Disable Social Bar */
+    footer.page{
+        .contact-links{
+            display: none;
+        }
     }
-    .footer-links{
-        height: fit-content;
+
+    /*formatting social links in content area*/
+    article.contact-links{
         flex-direction: column;
-        padding-left: 2em;
+        section{
+            display: flex;
+            align-items: center;
+        }
+        svg{
+            width: 20vw;
+        }
+        a{
+            width: fit-content;
+            text-decoration: none;
+            color: $colour-light-1;
+        }
+        h2{
+            padding-left: 2em;
+            font-family: sans-serif;
+            text-transform: uppercase;
+        }
     }
 }
