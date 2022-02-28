@@ -1,0 +1,109 @@
+///////////////////////////
+//        LAYOUT         //
+///////////////////////////
+
+/* Reset margin and padding for all elements to 0*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+                "header header header" 10vh
+                "left-margin main right-margin" 1fr
+                "footer footer footer" 10vh;
+}
+
+page-header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+}
+
+page-footer {
+    grid-area: footer;
+    position: sticky;
+    bottom: 0;
+}
+
+main {
+    grid-area: main;
+}
+
+
+
+/*common attributes for page header and footer */
+.page{
+    height:100%;
+}
+
+
+
+
+ /* Header */
+header.page{
+    .nav-menu{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    flex-basis: content;
+    align-items: center;
+
+    .hero{
+        width: 100vw;
+    }
+
+    h1{
+        margin: auto;
+        padding: 0.5em 0;
+    }
+
+    h2{
+        padding-left: 20vw;
+        padding-top: 1em;
+    }
+
+    section {
+        padding: 2em;
+    }
+}
+
+img {
+    width: 80vw;
+}
+
+
+footer.page {
+   height: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+
+   .contact-links {
+        flex:0 0 100%;
+        display: flex;
+        justify-content: space-around;
+        a {
+            width:5vh;
+        }
+    }
+
+   .copyright{
+       margin-top: 1em;
+       display: flex;
+       align-items: center;
+   }
+}
+
