@@ -1,0 +1,32 @@
+.flip {
+  -webkit-perspective: 40rem;
+          perspective: 40rem;
+}
+
+.flip-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 0.5s -webkit-transform;
+  transition: 0.5s -webkit-transform;
+  transition: 0.5s transform;
+  transition: 0.5s transform, 0.5s -webkit-transform;
+}
+
+.card:hover .flip-inner {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.flip-front, .flip-back {
+  min-width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.flip-back {
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+/*# sourceMappingURL=effects.css.map */
