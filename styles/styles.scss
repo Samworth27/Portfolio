@@ -11,124 +11,72 @@ $sans-serif:'Anton', sans-serif;
 $serif:'Cinzel', serif;
 $cursive:'Comfortaa', 'Anton', cursive;
 
-/* Reset margin and padding for all elements to 0*/
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    min-height: 100vh;
-    background-color: $colour-dark-1;
-    display: flex;
-    flex-direction: column;
-}
-
-/*common attributes for page header and footer */
-.page{
-    height:fit-content;
-    padding: 1em 0em;
-    background-color: $colour-dark-2;
-}
 
 
- /* Header */
-header.page{
-    position: sticky;
-    top: 0;
-     /*set sticky position*/
-
-    .nav-menu{
-        display: flex;
-        justify-content: space-around;
-
-        a{
-            font-family: $sans-serif;
-            color: $colour-light-1;
-            text-decoration: none;
-        }
-
-        a:hover{
-            color: $colour-mid-1;
-        }
-    }
 
 
-}
-
+/////////////////////////////
+//         STYLING         //
+/////////////////////////////
 
 
 /* Content */
 
-main {
+body {
+    background-color: $colour-dark-1;
 
-    display: flex;
-    flex-direction: column;
-    flex-basis: content;
-    align-items: center;
+    main {
 
-    .hero{
-        background-color: $colour-mid-1;
-        width: 100vw;
+        h1{
+            font-family: teeshirt,sans-serif;
+            color: $colour-light-1;
+            font-weight: 200;
+        }
 
-    }
+        h2{
+            color: $colour-light-1;
+            font-family: $sans-serif;
+            font-weight: 100;
+        }
 
-    h1{
-        margin: auto;
-        padding: 0.5em 0;
-        font-family: teeshirt,sans-serif;
-        color: $colour-light-1;
-        font-weight: 200;
-    }
-
-    h2{
-        padding-left: 20vw;
-        padding-top: 1em;
-        color: $colour-light-1;
-        font-family: $sans-serif;
-        font-weight: 100;
-    }
-
-    section{
-        padding: 2em;
-        color: $colour-light-1;
-        font-family: $serif;
+        section{
+            color: $colour-light-1;
+            font-family: $serif;
+        }
     }
 }
-  
+
 img {
-    width: 80vw;
     border-radius: 20px;
 }
 
 
-.flex-row{
-    img{
-        display: none;
+
+
+.page {
+    background-color: $colour-dark-2;
+}
+.nav-menu{
+    a{
+        font-family: $sans-serif;
+        color: $colour-light-1;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: $colour-mid-1;
     }
 }
-/* Footer */
 
-page-footer{
-    margin-top: auto;
-    position: sticky;
-    bottom: 0;
+.hero {
+    background-color: $colour-mid-1;
 }
 
 footer.page {
-     /*set sticky position*/
-    padding:2em 0;
     background-color: $colour-dark-2;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
     .copyright{
-        margin-top: 1em;
-        display: flex;
-        align-items: center;
+        display: none;
         svg{
             width: 1em;
             height: 1em;
@@ -137,16 +85,9 @@ footer.page {
     }
 }
 
-
 .contact-links {
-    flex:0 0 100%;
-    display: flex;
-    justify-content: space-around;
-    height: 5vh;
 
     a {
-        width:5vh;
-
         svg {
             fill: $colour-light-1;
         }
@@ -156,60 +97,6 @@ footer.page {
 
         svg {
             fill: $colour-mid-1;
-        }
-    }
-}
-
-/* Page Specific */
-
-.contact{
-
-    /*Disable Social Bar */
-    footer.page{
-        .contact-links{
-            display: none;
-        }
-    }
-
-    /*formatting social links in content area*/
-    article.contact-links{
-        flex-direction: column;
-        section{
-            display: flex;
-            align-items: center;
-        }
-        svg{
-            width: 20vw;
-        }
-        a{
-            width: fit-content;
-            text-decoration: none;
-            color: $colour-light-1;
-        }
-        h2{
-            padding-left: 2em;
-            font-family: sans-serif;
-            text-transform: uppercase;
-        }
-    }
-}
-
-
-@media only screen and (min-width: 450px){
-
-    .flex-row {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        p {
-            flex-grow: 1;
-            flex-basis: 50%;
-
-        }
-        img {
-            max-width: 40%;
-            max-height: 100%;
-            display: inline;
         }
     }
 }

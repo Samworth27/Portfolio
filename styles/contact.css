@@ -1,0 +1,42 @@
+.contact {
+  /*Disable Social Bar */
+  /*formatting social links in content area*/
+}
+
+.contact footer.page .contact-links {
+  display: none;
+}
+
+.contact article.contact-links {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact article.contact-links section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact article.contact-links svg {
+  width: 20vw;
+}
+
+.contact article.contact-links a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+}
+
+.contact article.contact-links h2 {
+  padding-left: 2em;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=contact.css.map */

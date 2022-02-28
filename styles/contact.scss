@@ -1,0 +1,29 @@
+.contact{
+    /*Disable Social Bar */
+    footer.page{
+        .contact-links{
+            display: none;
+        }
+    }
+
+    /*formatting social links in content area*/
+    article.contact-links{
+        flex-direction: column;
+        section{
+            display: flex;
+            align-items: center;
+        }
+        svg{
+            width: 20vw;
+        }
+        a{
+            width: fit-content;
+            text-decoration: none;
+        }
+        h2{
+            padding-left: 2em;
+            font-family: sans-serif;
+            text-transform: uppercase;
+        }
+    }
+}
