@@ -38,11 +38,19 @@ main {
 
 /* Header */
 header.page .nav-menu {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header.page .nav-menu a {
+  font-size: 5vw;
 }
 
 main {
@@ -62,6 +70,7 @@ main {
 
 main .hero {
   width: 100vw;
+  text-align: center;
 }
 
 main h1 {

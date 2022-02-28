@@ -1,37 +1,24 @@
-$time: 0.5s;
+.flip-card {
+    perspective: 800px;
+    .flip-body {
 
-.flip {
-    display: flex;
-    transition: z-index;
-    transition-delay: $time;
-    z-index: 0;
-    perspective: 40rem; 
+        transform-style: preserve-3d;
+        display:grid;
+        grid-template-areas: "overlap";
 
-    &:hover {
-        transition-delay: 0s;
-        z-index: 1s;
+        .flip-front, .flip-back{
+            grid-area: overlap;
+            backface-visibility: hidden;
+        }
+        .flip-front{
+            background-color: red;
+        }
+        .flip-back{
+            background-color: blue;
+            transform:rotateY(180deg);
+        }
     }
-
-    &:active{
-        transform: scale(0.975);
+    :hover{
+        transform: rotateY(180deg);
     }
-}
-
-.flip-inner {
-    display: flex;
-    transform-style: preserve-3d;
-    transition: $time transform;;
-}
-
-.flip-front, .flip-back {
-    backface-visibility: hidden;
-    min-width: 100%;
-}
-
-}
-  .flip-front {
-
-}
-  .flip-back {
-    transform: rotateY(-180deg) translate(-100%,0);
 }

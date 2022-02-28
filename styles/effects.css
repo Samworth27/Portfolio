@@ -1,32 +1,36 @@
-.flip {
-  -webkit-perspective: 40rem;
-          perspective: 40rem;
+.flip-card {
+  -webkit-perspective: 800px;
+          perspective: 800px;
 }
 
-.flip-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.flip-card .flip-body {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transition: 0.5s -webkit-transform;
-  transition: 0.5s -webkit-transform;
-  transition: 0.5s transform;
-  transition: 0.5s transform, 0.5s -webkit-transform;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "overlap";
 }
 
-.card:hover .flip-inner {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+.flip-card .flip-body .flip-front, .flip-card .flip-body .flip-back {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: overlap;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
-.flip-front, .flip-back {
-  min-width: 100%;
-  mix-blend-mode: multiply;
+.flip-card .flip-body .flip-front {
+  background-color: red;
 }
 
-.flip-back {
-  -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
+.flip-card .flip-body .flip-back {
+  background-color: blue;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-card :hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 /*# sourceMappingURL=effects.css.map */

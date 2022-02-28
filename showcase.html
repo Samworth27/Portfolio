@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/effects.css">
     <script src="/scripts/main.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,23 +18,16 @@
         <header class="hero">
             <h1>Showcase</h1>
         </header>
-        <article>
-            <h2>Showcase 1</h2>
-            <section>
-                <img src="img/cbr-lakeside-1.jpg"/>    
-            </section>
-        </article>
-        <article>
-            <h2>Showcase 2</h2>
-            <section>
-                <img src="img/drz-sundowner.jpg"/>
-            </section>
-        </article>
-        <article>
-            <h2>Showcase 3</h2>
-            <section>
-                <img src="img/drz-night.jpg"/>
-            </section>
+
+        <article class="flip-card">
+            <div class="flip-body">
+                <section class="flip-front">
+                    <h1>front</h1>
+                </section>
+                <section class="flip-back">
+                    <h1>back</h1>
+                </section>
+            </div>
         </article>
     </main>
 
