@@ -24,7 +24,9 @@ $cursive:'Comfortaa', 'Anton', cursive;
 
 body {
     background-color: $colour-dark-1;
-
+    background-image: url("/img/drz-night.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     main {
 
         h1{

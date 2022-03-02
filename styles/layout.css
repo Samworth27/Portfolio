@@ -18,6 +18,7 @@ page-header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 page-footer {
@@ -25,10 +26,12 @@ page-footer {
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
+  z-index: 1;
 }
 
 main {
   grid-area: main;
+  z-index: 0;
 }
 
 /*common attributes for page header and footer */
@@ -84,7 +87,7 @@ main h2 {
 }
 
 main section {
-  padding: 2em;
+  padding: 0.5em;
 }
 
 img {

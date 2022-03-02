@@ -9,6 +9,8 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: "overlap";
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
 }
 
 .flip-card .flip-body .flip-front, .flip-card .flip-body .flip-back {
@@ -29,7 +31,7 @@
           transform: rotateY(180deg);
 }
 
-.flip-card :hover {
+.flip-card:hover .flip-body {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
