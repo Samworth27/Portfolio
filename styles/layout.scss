@@ -70,6 +70,7 @@ main {
     align-items: center;
 
     .hero{
+        height: 80vh;
         width: 100vw;
         text-align: center;
     }
@@ -77,20 +78,28 @@ main {
     h1{
         margin: auto;
         padding: 0.5em 0;
+        text-align: center;
     }
 
     h2{
-        padding-left: 20vw;
         padding-top: 1em;
+        text-align: center;
+        position:fixed;
+        left: 50%;
     }
 
     section {
         padding: 0.5em;
+        height: 80vh;
+        width: 100%;
+        img{
+            height: 80vh;
+        }
     }
 }
 
 img {
-    width: 80vw;
+    width: 100%;
 }
 
 

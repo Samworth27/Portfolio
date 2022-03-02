@@ -4,6 +4,7 @@
 }
 
 .flip-card .flip-body {
+  margin: 1em 0;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   display: -ms-grid;
@@ -11,9 +12,12 @@
       grid-template-areas: "overlap";
   -webkit-transition: 1s all ease-in-out;
   transition: 1s all ease-in-out;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
 }
 
 .flip-card .flip-body .flip-front, .flip-card .flip-body .flip-back {
+  padding: 0;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: overlap;
@@ -21,12 +25,11 @@
           backface-visibility: hidden;
 }
 
-.flip-card .flip-body .flip-front {
-  background-color: red;
+.flip-card .flip-body .flip-front img {
+  border-radius: 0;
 }
 
 .flip-card .flip-body .flip-back {
-  background-color: blue;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }

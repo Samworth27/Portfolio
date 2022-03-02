@@ -1,23 +1,33 @@
+$colour-dark-1:#28231A;     //Zeus
+$colour-dark-2:#4E3D23;     //roko
+$colour-mid-1:#8A7F62;      //Clay Creek
+$colour-light-1:#CCCDD4;    //Ghost
+
 .flip-card {
     perspective: 800px;
+    
     // z-index: -1;
 
     .flip-body {
-
+        margin: 1em 0;
         transform-style: preserve-3d;
         display:grid;
         grid-template-areas: "overlap";
         transition:1s all ease-in-out;
+        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
 
         .flip-front, .flip-back{
+            padding: 0;
             grid-area: overlap;
             backface-visibility: hidden;
         }
         .flip-front{
-            background-color: red;
+            //background-color: red;
+            img {
+                border-radius: 0;
+            }
         }
         .flip-back{
-            background-color: blue;
             transform:rotateY(180deg);
         }
     }

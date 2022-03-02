@@ -5,9 +5,6 @@
 /* Content */
 body {
   background-color: #28231A;
-  background-image: url("/img/drz-night.jpg");
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 body main h1 {
