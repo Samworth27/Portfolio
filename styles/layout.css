@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
-  grid-template: "header header header" 10vh "left-margin main right-margin" 1fr "footer footer footer" 10vh;
+  grid-template: "header header header" 10vh "left-margin main right-margin" 1fr "footer footer footer" 10vh/ 5vw 1fr 5vw;
 }
 
 page-header {
@@ -73,7 +73,7 @@ main {
 
 main .hero {
   height: 80vh;
-  width: 100vw;
+  width: 100%;
   text-align: center;
 }
 
@@ -86,18 +86,21 @@ main h1 {
 main h2 {
   padding-top: 1em;
   text-align: center;
-  position: fixed;
   left: 50%;
 }
 
-main section {
+main article {
+  scroll-snap-align: start;
   padding: 0.5em;
   height: 80vh;
   width: 100%;
 }
 
-main section img {
+main section {
+  scroll-snap-align: start;
+  padding: 0.5em;
   height: 80vh;
+  width: 100%;
 }
 
 img {
@@ -114,6 +117,9 @@ footer.page {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer.page .contact-links {
@@ -125,6 +131,9 @@ footer.page .contact-links {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer.page .contact-links a {

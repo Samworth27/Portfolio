@@ -1,0 +1,59 @@
+body {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  grid-template: "header header header header" 10vh "left-margin main navbar right-margin" 1fr "footer footer footer footer" 10vh / 5vw 2fr 1fr 5vw;
+}
+
+body section {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body h1 {
+  font-size: 1.5em;
+}
+
+body .post {
+  font-size: 0.8em;
+}
+
+body p {
+  padding-bottom: 1em;
+}
+
+.sidebar {
+  right: 5vw;
+  height: 100%;
+  width: 100%;
+  grid-area: navbar;
+  background-color: #CCCDD4;
+  font-family: "Anton", sans-serif;
+}
+
+.sidebar a {
+  color: #28231A;
+}
+
+.sidebar li {
+  list-style: none;
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.sidebar .image {
+  padding-top: 100%;
+  background-color: red;
+}
+
+.sidebar nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10vh;
+}
+
+.sidebar h3 {
+  text-align: center;
+}
+/*# sourceMappingURL=blog.css.map */

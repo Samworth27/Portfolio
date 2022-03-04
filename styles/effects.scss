@@ -2,6 +2,7 @@ $colour-dark-1:#28231A;     //Zeus
 $colour-dark-2:#4E3D23;     //roko
 $colour-mid-1:#8A7F62;      //Clay Creek
 $colour-light-1:#CCCDD4;    //Ghost
+$sans-serif:'Anton', sans-serif;
 
 .flip-card {
     perspective: 800px;
@@ -15,7 +16,6 @@ $colour-light-1:#CCCDD4;    //Ghost
         grid-template-areas: "overlap";
         transition:1s all ease-in-out;
         box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
-
         .flip-front, .flip-back{
             padding: 0;
             grid-area: overlap;

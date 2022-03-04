@@ -1,13 +1,13 @@
 class PageHeader extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
-        <header class="page">
+        <header id="page-header" class="page">
             <nav class="nav-menu">
-                <a href="index.html" class="nav-home">Home</a>
-                <a href="about.html" class="nav-about">About Me</a>
-                <a href="showcase.html" class="nav-showcase">Showcase</a>
-                <a href="blog.html" class="nav-blog">Blog</a>
-                <a href="contact.html" class="nav-contact">Contact</a>
+                <a href="/index.html" class="nav-home">Home</a>
+                <a href="/about.html" class="nav-about">About Me</a>
+                <a href="/showcase.html" class="nav-showcase">Showcase</a>
+                <a href="/blog.html" class="nav-blog">Blog</a>
+                <a href="/contact.html" class="nav-contact">Contact</a>
             </nav>
         </header>
         `;

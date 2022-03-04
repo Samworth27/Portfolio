@@ -1,0 +1,56 @@
+$colour-dark-1:#28231A;     //Zeus
+$colour-dark-2:#4E3D23;     //roko
+$colour-mid-1:#8A7F62;      //Clay Creek
+$colour-light-1:#CCCDD4;    //Ghost
+$sans-serif:'Anton', sans-serif;
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+                "header header header header" 10vh
+                "left-margin main navbar right-margin" 1fr
+                "footer footer footer footer" 10vh / 5vw 2fr 1fr 5vw;
+    section{
+        height: fit-content;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .post {
+        font-size: 0.8em;
+    }
+    p {
+        padding-bottom: 1em;
+    }
+}
+
+.sidebar {
+    right: 5vw;
+    height: 100%;
+    width: 100%;
+    grid-area:navbar;
+    background-color: $colour-light-1;
+    font-family: $sans-serif;
+    a {
+        color: $colour-dark-1;
+    }
+    li {
+        list-style: none;
+        padding-left: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .image {
+        padding-top: 100%;
+        background-color: red;
+    }
+    nav {
+        position: sticky;
+        top:10vh;
+    }
+    h3 {
+        text-align: center;
+    }
+
+}
+
