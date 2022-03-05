@@ -25,15 +25,32 @@ body p {
   padding-bottom: 1em;
 }
 
+body a {
+  color: #CCCDD4;
+}
+
+body .post-info {
+  font-size: 0.8em;
+}
+
+body .align-left {
+  float: left;
+}
+
+body .align-right {
+  float: right;
+}
+
 .sidebar {
   height: 100%;
   width: 100%;
   grid-area: navbar;
-  font-family: "Oxanium", sans-serif;
+  font-family: "Oxanium", serif;
 }
 
 .sidebar a {
   color: #CCCDD4;
+  font-family: "Oxanium", serif;
 }
 
 .sidebar li {
@@ -45,6 +62,8 @@ body p {
 .sidebar .image {
   padding-top: 100%;
   background-color: red;
+  background-image: url(/img/climging-1.jpg);
+  background-size: cover;
 }
 
 .sidebar nav {
@@ -54,6 +73,7 @@ body p {
 }
 
 .sidebar h3 {
+  padding-top: 1em;
   text-align: center;
   color: #CCCDD4;
 }

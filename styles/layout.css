@@ -70,6 +70,10 @@ main {
           align-items: center;
 }
 
+main img {
+  width: 100%;
+}
+
 main .hero {
   width: 100%;
   text-align: center;
@@ -136,12 +140,22 @@ footer.page .copyright {
           align-items: center;
 }
 
-.showcase img {
-  width: 100%;
-}
-
 .about article p {
   text-align: justify;
   margin: 1em;
+}
+
+@media only screen and (min-width: 700px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .showcase .flip-card {
+    max-width: 40%;
+  }
 }
 /*# sourceMappingURL=layout.css.map */

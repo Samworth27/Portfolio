@@ -67,7 +67,9 @@ main {
     flex-basis: content;
     align-items: center;
 
-
+    img {
+        width: 100%;
+    }
 
     .hero{
 
@@ -121,15 +123,20 @@ footer.page {
    }
 }
 
-.showcase {
-    img {
-        width: 100%;
-    }
-}
-
 .about article {
     p {
         text-align: justify;
         margin: 1em;
+    }
+}
+
+@media only screen and (min-width:700px){
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .showcase .flip-card {
+        max-width: 40%;
     }
 }
