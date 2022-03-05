@@ -1,18 +1,29 @@
-$colour-dark-1:#28231A;     //Zeus
-$colour-dark-2:#4E3D23;     //roko
+$colour-black:#121212;
+$colour-dark-2:rgb(8, 8, 8);
 $colour-mid-1:#8A7F62;      //Clay Creek
-$colour-light-1:#CCCDD4;    //Ghost
+$colour-white:#CCCDD4;    //Ghost
+$colour-accent:#00982e;
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 @import url("https://use.typekit.net/qdq3ntt.css");
-$sans-serif:'Anton', sans-serif;
-$serif:'Cinzel', serif;
-$cursive:'Comfortaa', 'Anton', cursive;
 
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Oxanium:wght@200&display=swap');
+$font-menu:'Audiowide', cursive;
+$font-title:'Bungee Hairline', cursive;
+$sans-serif:'Oxanium', sans-serif;
+$serif:'Oxanium', serif;
+$cursive:'Oxanium', 'Anton', cursive;
 
-
+@mixin depth-1 {
+    background-color: rgba(255, 255, 255, 0.05);
+    z-index: 1;
+}
+@mixin depth-2 {
+    background-color: rgba(255, 255, 255, 0.07);
+    z-index: 2;
+}
 
 
 /////////////////////////////
@@ -23,37 +34,33 @@ $cursive:'Comfortaa', 'Anton', cursive;
 /* Content */
 
 body {
-    background-color: $colour-dark-1;
-    // background-image: url("/img/drz-night.jpg");
-    // background-size: cover;
-    // background-attachment: fixed;
-    // background-position: 50% 50%;
+    background-color: $colour-black;
     main {
 
         h1{
-            font-family: teeshirt,sans-serif;
-            color: $colour-light-1;
-            font-weight: 200;
+            font-family: $font-title;
+            color: $colour-white;
+            font-size: auto;
+            // font-weight: 200;
+            padding-bottom: 0;
         }
 
         h2{
-            color: $colour-light-1;
+            color: $colour-white;
             font-family: $sans-serif;
+            font-size: auto;
             font-weight: 100;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
         }
 
-        section{
-            color: $colour-light-1;
+        section, article{
+            color: $colour-white;
             font-family: $serif;
+            background-color: $colour-black;
         }
     }
 }
-
-img {
-    border-radius: 20px;
-}
-
-
 
 
 .page {
@@ -62,18 +69,19 @@ img {
 
 .nav-menu{
     a{
-        font-family: $sans-serif;
-        color: $colour-light-1;
+        font-family: $font-menu;
+        color: $colour-white;
         text-decoration: none;
+        font-size: 3vw;
     }
 
     a:hover{
-        color: $colour-mid-1;
+        color: $colour-accent;
     }
 }
 
 .hero {
-    background-color: $colour-mid-1;
+    @include depth-2
 }
 
 footer.page {
@@ -84,7 +92,7 @@ footer.page {
         svg{
             width: 1em;
             height: 1em;
-            fill:black;
+            fill:white;
         }
     }
 }
@@ -93,7 +101,7 @@ footer.page {
 
     a {
         svg {
-            fill: $colour-light-1;
+            fill: $colour-white;
         }
     }
 
@@ -105,3 +113,38 @@ footer.page {
     }
 }
 
+.card {
+    margin: 1em 0;
+    //border: white;
+    //border-style: groove;
+    background-color: $colour-black;
+    p {
+        padding: 1em;
+    }
+}
+
+.headshot {
+    img{
+        display: block;
+        margin: auto;
+        margin-top: 1em;
+        object-fit: cover;
+        height: 60vmin;
+        width:  60vmin;
+        border-radius: 50%;
+    }
+}
+
+hr {
+    border-color: $colour-accent;
+    margin:0.5em;
+}
+
+//depth 1
+.dp1 {
+    @include depth-1;
+}
+// depth 2
+.dp2 {
+    @include depth-2
+}

@@ -2,52 +2,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
 @import url("https://use.typekit.net/qdq3ntt.css");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Oxanium:wght@200&display=swap");
 /* Content */
 body {
-  background-color: #28231A;
+  background-color: #121212;
 }
 
 body main h1 {
-  font-family: teeshirt,sans-serif;
+  font-family: "Bungee Hairline", cursive;
   color: #CCCDD4;
-  font-weight: 200;
+  font-size: auto;
+  padding-bottom: 0;
 }
 
 body main h2 {
   color: #CCCDD4;
-  font-family: "Anton", sans-serif;
+  font-family: "Oxanium", sans-serif;
+  font-size: auto;
   font-weight: 100;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
-body main section {
+body main section, body main article {
   color: #CCCDD4;
-  font-family: "Cinzel", serif;
-}
-
-img {
-  border-radius: 20px;
+  font-family: "Oxanium", serif;
+  background-color: #121212;
 }
 
 .page {
-  background-color: #4E3D23;
+  background-color: #080808;
 }
 
 .nav-menu a {
-  font-family: "Anton", sans-serif;
+  font-family: "Audiowide", cursive;
   color: #CCCDD4;
   text-decoration: none;
+  font-size: 3vw;
 }
 
 .nav-menu a:hover {
-  color: #8A7F62;
+  color: #00982e;
 }
 
 .hero {
-  background-color: #8A7F62;
+  background-color: rgba(255, 255, 255, 0.07);
+  z-index: 2;
 }
 
 footer.page {
-  background-color: #4E3D23;
+  background-color: #080808;
 }
 
 footer.page .copyright {
@@ -57,7 +61,7 @@ footer.page .copyright {
 footer.page .copyright svg {
   width: 1em;
   height: 1em;
-  fill: black;
+  fill: white;
 }
 
 .contact-links a svg {
@@ -66,5 +70,40 @@ footer.page .copyright svg {
 
 .contact-links a:hover svg {
   fill: #8A7F62;
+}
+
+.card {
+  margin: 1em 0;
+  background-color: #121212;
+}
+
+.card p {
+  padding: 1em;
+}
+
+.headshot img {
+  display: block;
+  margin: auto;
+  margin-top: 1em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 60vmin;
+  width: 60vmin;
+  border-radius: 50%;
+}
+
+hr {
+  border-color: #00982e;
+  margin: 0.5em;
+}
+
+.dp1 {
+  background-color: rgba(255, 255, 255, 0.05);
+  z-index: 1;
+}
+
+.dp2 {
+  background-color: rgba(255, 255, 255, 0.07);
+  z-index: 2;
 }
 /*# sourceMappingURL=styles.css.map */

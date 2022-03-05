@@ -52,10 +52,6 @@ header.page .nav-menu {
           align-items: center;
 }
 
-header.page .nav-menu a {
-  font-size: 5vw;
-}
-
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,7 +68,6 @@ main {
 }
 
 main .hero {
-  height: 80vh;
   width: 100%;
   text-align: center;
 }
@@ -89,21 +84,8 @@ main h2 {
   left: 50%;
 }
 
-main article {
-  scroll-snap-align: start;
+main article, main section {
   padding: 0.5em;
-  height: 80vh;
-  width: 100%;
-}
-
-main section {
-  scroll-snap-align: start;
-  padding: 0.5em;
-  height: 80vh;
-  width: 100%;
-}
-
-img {
   width: 100%;
 }
 
@@ -148,5 +130,9 @@ footer.page .copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.showcase img {
+  width: 100%;
 }
 /*# sourceMappingURL=layout.css.map */

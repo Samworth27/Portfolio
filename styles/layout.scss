@@ -55,9 +55,6 @@ header.page{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        a {
-            font-size: 5vw;
-        }
     }
 
 }
@@ -73,7 +70,7 @@ main {
 
     .hero{
 
-        height: 80vh;
+        //height: 80vh;
         width:100%;
         text-align: center;
     }
@@ -90,23 +87,11 @@ main {
         left: 50%;
     }
    
-    article {
-        scroll-snap-align: start;
+    article, section {
         padding: 0.5em;
-        height: 80vh;
+        //height: 80vh;
         width: 100%;
     }
-
-    section {
-        scroll-snap-align: start;
-        padding: 0.5em;
-        height: 80vh;
-        width: 100%;
-    }
-}
-
-img {
-    width: 100%;
 }
 
 
@@ -134,3 +119,8 @@ footer.page {
    }
 }
 
+.showcase {
+    img {
+        width: 100%;
+    }
+}

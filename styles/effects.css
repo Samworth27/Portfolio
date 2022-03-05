@@ -4,7 +4,6 @@
 }
 
 .flip-card .flip-body {
-  margin: 1em 0;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   display: -ms-grid;
@@ -12,8 +11,6 @@
       grid-template-areas: "overlap";
   -webkit-transition: 1s all ease-in-out;
   transition: 1s all ease-in-out;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
 }
 
 .flip-card .flip-body .flip-front, .flip-card .flip-body .flip-back {

@@ -1,7 +1,7 @@
-$colour-dark-1:#28231A;     //Zeus
+$colour-black:#28231A;     //Zeus
 $colour-dark-2:#4E3D23;     //roko
 $colour-mid-1:#8A7F62;      //Clay Creek
-$colour-light-1:#CCCDD4;    //Ghost
+$colour-white:#CCCDD4;    //Ghost
 $sans-serif:'Anton', sans-serif;
 
 .flip-card {
@@ -10,12 +10,10 @@ $sans-serif:'Anton', sans-serif;
     // z-index: -1;
 
     .flip-body {
-        margin: 1em 0;
         transform-style: preserve-3d;
         display:grid;
         grid-template-areas: "overlap";
         transition:1s all ease-in-out;
-        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
         .flip-front, .flip-back{
             padding: 0;
             grid-area: overlap;
@@ -35,4 +33,5 @@ $sans-serif:'Anton', sans-serif;
 .flip-card:hover .flip-body {
     transform: rotateY(180deg);
   }
-  
+
+
