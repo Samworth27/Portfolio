@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Oxanium:wght@200&display=swap");
+@use "sass:color";
 body {
   min-height: 100vh;
   display: -ms-grid;
@@ -24,16 +26,14 @@ body p {
 }
 
 .sidebar {
-  right: 5vw;
   height: 100%;
   width: 100%;
   grid-area: navbar;
-  background-color: #CCCDD4;
-  font-family: "Anton", sans-serif;
+  font-family: "Oxanium", sans-serif;
 }
 
 .sidebar a {
-  color: #28231A;
+  color: #CCCDD4;
 }
 
 .sidebar li {
@@ -55,5 +55,6 @@ body p {
 
 .sidebar h3 {
   text-align: center;
+  color: #CCCDD4;
 }
 /*# sourceMappingURL=blog.css.map */

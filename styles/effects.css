@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Oxanium:wght@200&display=swap");
+@use "sass:color";
 .flip-card {
   -webkit-perspective: 800px;
           perspective: 800px;

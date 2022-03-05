@@ -5,7 +5,6 @@ $colour-dark-2:rgb(8, 8, 8);
 $colour-white:#CCCDD4;    //Ghost
 $colour-accent:#00982e;
 
-
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Oxanium:wght@200&display=swap');
 $font-menu:'Audiowide', cursive;
 $font-title:'Bungee Hairline', cursive;
@@ -28,36 +27,3 @@ $cursive:'Oxanium', 'Anton', cursive;
     position: relative;
     z-index: 2;
 }
-
-
-.flip-card {
-    perspective: 800px;
-    
-    // z-index: -1;
-
-    .flip-body {
-        transform-style: preserve-3d;
-        display:grid;
-        grid-template-areas: "overlap";
-        transition:1s all ease-in-out;
-        .flip-front, .flip-back{
-            padding: 0;
-            grid-area: overlap;
-            backface-visibility: hidden;
-        }
-        .flip-front{
-            //background-color: red;
-            img {
-                border-radius: 0;
-            }
-        }
-        .flip-back{
-            transform:rotateY(180deg);
-        }
-    }
-}
-.flip-card:hover .flip-body {
-    transform: rotateY(180deg);
-  }
-
-

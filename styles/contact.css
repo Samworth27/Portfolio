@@ -3,10 +3,6 @@
   /*formatting social links in content area*/
 }
 
-.contact footer.page .contact-links {
-  display: none;
-}
-
 .contact article.contact-links {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

@@ -1,8 +1,17 @@
-$colour-black:#28231A;     //Zeus
-$colour-dark-2:#4E3D23;     //roko
-$colour-mid-1:#8A7F62;      //Clay Creek
+@use "sass:color";
+
+$colour-black:#121212;
+$colour-dark-2:rgb(8, 8, 8);
 $colour-white:#CCCDD4;    //Ghost
-$sans-serif:'Anton', sans-serif;
+$colour-accent:#00982e;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Oxanium:wght@200&display=swap');
+$font-menu:'Audiowide', cursive;
+$font-title:'Bungee Hairline', cursive;
+$sans-serif:'Oxanium', sans-serif;
+$serif:'Oxanium', serif;
+$cursive:'Oxanium', 'Anton', cursive;
 
 body {
     min-height: 100vh;
@@ -26,14 +35,12 @@ body {
 }
 
 .sidebar {
-    right: 5vw;
     height: 100%;
     width: 100%;
     grid-area:navbar;
-    background-color: $colour-white;
     font-family: $sans-serif;
     a {
-        color: $colour-black;
+        color: $colour-white;
     }
     li {
         list-style: none;
@@ -50,6 +57,7 @@ body {
     }
     h3 {
         text-align: center;
+        color: $colour-white;
     }
 
 }

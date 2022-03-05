@@ -2,14 +2,9 @@
 
 $colour-black:#121212;
 $colour-dark-2:rgb(8, 8, 8);
-$colour-mid-1:#8A7F62;      //Clay Creek
 $colour-white:#CCCDD4;    //Ghost
 $colour-accent:#00982e;
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
-@import url("https://use.typekit.net/qdq3ntt.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Oxanium:wght@200&display=swap');
 $font-menu:'Audiowide', cursive;
@@ -101,7 +96,7 @@ body {
 }
 
 .hero {
-    @include depth-2
+    @include depth-2;
 }
 
 footer.page {
@@ -128,16 +123,16 @@ footer.page {
     a:hover {
 
         svg {
-            fill: $colour-mid-1;
+            fill: $colour-white;
         }
     }
 }
 
 .card {
+    @include depth-1;
     margin: 1em 0;
     //border: white;
     //border-style: groove;
-    background-color: $colour-black;
     p {
         padding: 1em;
     }
@@ -149,8 +144,8 @@ footer.page {
         margin: auto;
         margin-top: 1em;
         object-fit: cover;
-        height: 60vmin;
-        width:  60vmin;
+        height: 50vmin;
+        width:  50vmin;
         border-radius: 50%;
     }
 }
