@@ -73,6 +73,7 @@ main {
         //height: 80vh;
         width:100%;
         text-align: center;
+        margin-top: 1em;
     }
 
     h1{
@@ -122,5 +123,12 @@ footer.page {
 .showcase {
     img {
         width: 100%;
+    }
+}
+
+.about article {
+    p {
+        text-align: justify;
+        margin: 1em;
     }
 }

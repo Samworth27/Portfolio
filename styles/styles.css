@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
 @import url("https://use.typekit.net/qdq3ntt.css");
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Oxanium:wght@200&display=swap");
+@use "sass:color";
 /* Content */
 body {
   background-color: #121212;
@@ -19,15 +20,26 @@ body main h2 {
   color: #CCCDD4;
   font-family: "Oxanium", sans-serif;
   font-size: auto;
-  font-weight: 100;
+  font-weight: 400;
   padding-left: 0.5em;
   padding-right: 0.5em;
+}
+
+body main h3 {
+  font-family: "Oxanium", sans-serif;
+  font-weight: 100;
+  padding-left: 1em;
+  text-decoration: underline;
 }
 
 body main section, body main article {
   color: #CCCDD4;
   font-family: "Oxanium", serif;
-  background-color: #121212;
+}
+
+body .accent {
+  color: #00982e;
+  text-decoration: underline;
 }
 
 .page {
@@ -46,7 +58,10 @@ body main section, body main article {
 }
 
 .hero {
-  background-color: rgba(255, 255, 255, 0.07);
+  background-color: #232323;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  position: relative;
   z-index: 2;
 }
 
@@ -98,12 +113,18 @@ hr {
 }
 
 .dp1 {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: #1e1e1e;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  position: relative;
   z-index: 1;
 }
 
 .dp2 {
-  background-color: rgba(255, 255, 255, 0.07);
+  background-color: #232323;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  position: relative;
   z-index: 2;
 }
 /*# sourceMappingURL=styles.css.map */

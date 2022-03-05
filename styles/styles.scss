@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $colour-black:#121212;
 $colour-dark-2:rgb(8, 8, 8);
 $colour-mid-1:#8A7F62;      //Clay Creek
@@ -16,12 +18,19 @@ $sans-serif:'Oxanium', sans-serif;
 $serif:'Oxanium', serif;
 $cursive:'Oxanium', 'Anton', cursive;
 
+
+
 @mixin depth-1 {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: scale-color($colour-black,$lightness:5%);;
+    box-shadow: 0 0 5px black;
+    position: relative;
     z-index: 1;
 }
+
 @mixin depth-2 {
-    background-color: rgba(255, 255, 255, 0.07);
+    background-color: scale-color($colour-black,$lightness:7%);;
+    box-shadow: 0 0 5px black;
+    position: relative;
     z-index: 2;
 }
 
@@ -35,6 +44,7 @@ $cursive:'Oxanium', 'Anton', cursive;
 
 body {
     background-color: $colour-black;
+
     main {
 
         h1{
@@ -49,16 +59,26 @@ body {
             color: $colour-white;
             font-family: $sans-serif;
             font-size: auto;
-            font-weight: 100;
+            font-weight: 400;
             padding-left: 0.5em;
             padding-right: 0.5em;
+        }
+        h3 {
+            font-family: $sans-serif;
+            font-weight: 100;
+            padding-left: 1em;
+            text-decoration: underline;
         }
 
         section, article{
             color: $colour-white;
             font-family: $serif;
-            background-color: $colour-black;
         }
+    }
+
+    .accent {
+        color:$colour-accent;
+        text-decoration: underline;
     }
 }
 

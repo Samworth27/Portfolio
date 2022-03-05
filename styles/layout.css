@@ -70,6 +70,7 @@ main {
 main .hero {
   width: 100%;
   text-align: center;
+  margin-top: 1em;
 }
 
 main h1 {
@@ -134,5 +135,10 @@ footer.page .copyright {
 
 .showcase img {
   width: 100%;
+}
+
+.about article p {
+  text-align: justify;
+  margin: 1em;
 }
 /*# sourceMappingURL=layout.css.map */
