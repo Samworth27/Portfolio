@@ -1,2 +1,1 @@
-Contact Form
-Resume on title card
+Increase font size on full sized devices

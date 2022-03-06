@@ -1,0 +1,224 @@
+commit af19912f5ec3a3bc76aa3f6ce969721f0b7a50a5
+Author: samworth27 <samworth27@gmail.com>
+Date:   Sun Mar 6 15:34:45 2022 +1000
+
+    W3 HTML Validator fixes, + component comments
+
+commit 4545d184f9a453d6d7e8ae972f480c8c73063737
+Author: samworth27 <samworth27@gmail.com>
+Date:   Sun Mar 6 13:59:27 2022 +1000
+
+    changed < & > to &lt; and &gt;
+
+commit 782d6f18537f39fca465014a422b14bdfab1a235
+Author: samworth27 <samworth27@gmail.com>
+Date:   Sun Mar 6 13:56:11 2022 +1000
+
+    Completed Site
+
+commit 90245a9216e8a053c216cfff65bfb8a8ad0d59df
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Sat Mar 5 22:40:56 2022 +1000
+
+    Site nearly complete
+
+commit fc93dfc74f3b760fa6fc8d8e5fa8ae34a6106603
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Sat Mar 5 18:45:57 2022 +1000
+
+    minor fixes
+
+commit 7f20e60c3a7c6a72654f9f9934e2003ffd58dc5c
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Sat Mar 5 18:12:27 2022 +1000
+
+    push to live to test new styling
+
+commit 74517fae111c9ea6c9be84de1fbe8db55b5bc467
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Sat Mar 5 13:51:00 2022 +1000
+
+    convert colours to dark theme. Tidy up layout containers
+
+commit 410f7e8569bea42b30cc20401c8f650dc4af3e7e
+Author: samworth27 <samworth27@gmail.com>
+Date:   Fri Mar 4 14:45:59 2022 +1000
+
+    swapping workstation
+
+commit 827c1cd2fc845ee0c6c96097aece418c1fdd53b7
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Thu Mar 3 07:20:36 2022 +1000
+
+    swap pcs
+
+commit 2ef6d8328e034625cef4f324c6f43ae4ccc8ba8d
+Author: samworth27 <samworth27@gmail.com>
+Date:   Wed Mar 2 15:30:24 2022 +1000
+
+    swapping to desktop
+
+commit 0546e218d10d9318df6f564f0bc94e6e753712bf
+Author: samworth27 <samworth27@gmail.com>
+Date:   Mon Feb 28 16:56:40 2022 +1000
+
+    testing flip card
+
+commit ceb3ffb91c8a878daa31d9b88a52994a7ed0a083
+Merge: 24f323b eb95de2
+Author: Samworth27 <91940574+Samworth27@users.noreply.github.com>
+Date:   Mon Feb 28 16:23:23 2022 +1000
+
+    Merge pull request #2 from Samworth27/grid
+    
+    convert base structure to grid. Seperate styles and layout css
+
+commit eb95de259aba1a2c16f23df93a691efe11eaa350
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Mon Feb 28 14:42:44 2022 +1000
+
+    convert base structure to grid. Seperate styles and layout css
+
+commit 24f323b7a624cec58d7b46c01fcb128b792ef092
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Mon Feb 28 13:45:35 2022 +1000
+
+    commit before converting to grid
+
+commit 02a02dfb66c091ed22f7825a05a4257393be9c9e
+Author: samworth27 <samworth27@gmail.com>
+Date:   Fri Feb 25 13:05:40 2022 +1000
+
+    +table wireframes, +footer pushed to bottom
+
+commit c7c121c4754019b03a21116cf387c2f17a297c4a
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Thu Feb 24 18:55:36 2022 +1000
+
+    changed blog hero text
+
+commit 245dc6a1391cad8c41bb0aff2802df525822988e
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Thu Feb 24 18:33:07 2022 +1000
+
+    -body flexbox +content formating
+
+commit 0f2c7c0ca3df19c123f50921131b50a48adaa7b4
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Thu Feb 24 16:42:39 2022 +1000
+
+    fixed issues with sticky nav bar
+
+commit 10e5f8cb05c41871c00e2024b811914285eb4da7
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Thu Feb 24 14:38:51 2022 +1000
+
+    Restructured files
+    Create main.js to insert header and footer content
+    Additional styling for mobile
+
+commit 3e2aa166a4e4d23c5eedd38d57f221642c0a2d21
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Wed Feb 23 21:23:52 2022 +1000
+
+    Updated to new template again
+
+commit 96d06b6db4e7b63f79fa683c0783371bbc7266be
+Author: Samworth27 <91940574+Samworth27@users.noreply.github.com>
+Date:   Wed Feb 23 19:00:39 2022 +1000
+
+    Delete IMG20210810123449.jpg
+
+commit 0cca0efa2e1a55ed5d2288a702b2a46893cc802c
+Merge: d9a6c0b b003a80
+Author: Samworth27 <91940574+Samworth27@users.noreply.github.com>
+Date:   Wed Feb 23 18:59:56 2022 +1000
+
+    Merge pull request #1 from Samworth27/topnav
+    
+    initial commit for topnav branch.
+
+commit d9a6c0bb244df49a40332a1fb2e8f8ecfec5a9c3
+Merge: 0af0b57 9053c2c
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Wed Feb 23 18:42:36 2022 +1000
+
+    Merge branch 'master' of github.com:Samworth27/Portfolio
+
+commit 0af0b57552a09c3437ac8721cb8c15c37a982952
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Wed Feb 23 18:38:38 2022 +1000
+
+    wireframe
+
+commit b003a8031772ab315794b9a09ee8708f71ebd2ad
+Author: samworth27 <samworth27@gmail.com>
+Date:   Wed Feb 23 14:32:03 2022 +1000
+
+    initial commit for topnav branch.
+
+commit 9053c2c8696b6bc707079ca8f665b8c8cb380842
+Author: Samworth27 <91940574+Samworth27@users.noreply.github.com>
+Date:   Wed Feb 23 12:13:11 2022 +1000
+
+    Add files via upload
+
+commit bcc6b50a808c8b9eeb72bf6b4fd5f35a88ae56fb
+Author: samworth27 <samworth27@gmail.com>
+Date:   Wed Feb 23 11:21:56 2022 +1000
+
+    add background, nav images to text
+
+commit a17c16ec8808fe39e061e76843a6227b69fe0c56
+Author: Samworth27 <91940574+Samworth27@users.noreply.github.com>
+Date:   Wed Feb 23 10:48:06 2022 +1000
+
+    Add raw images
+
+commit fb3343da016e0db691d52c482436d17ddbac4d3a
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Tue Feb 22 21:04:53 2022 +1000
+
+    flexbox to content container. Scrolling to blog container
+
+commit 571c91cfe246e1ba112859b230292d75e46ed3cd
+Author: samworth27 <samworth27@gmail.com>
+Date:   Tue Feb 22 15:30:18 2022 +1000
+
+    small changes before swaping to desktop
+
+commit 2d5538ceb031c0dee26e776635db3b30bea2a261
+Author: samworth27 <samworth27@gmail.com>
+Date:   Tue Feb 22 14:53:45 2022 +1000
+
+    renamed links to home in all pages
+
+commit 83e0aa7eb4306a236ca016bda65cfb9fc2e4fc1a
+Author: samworth27 <samworth27@gmail.com>
+Date:   Tue Feb 22 14:52:16 2022 +1000
+
+    renamed indexnew.html to index.html
+
+commit 849a4fccaf8e3d5213571f916a6a162d772c394e
+Author: samworth27 <samworth27@gmail.com>
+Date:   Tue Feb 22 14:50:52 2022 +1000
+
+    change to grid based design
+
+commit 5e9e54ce5fadd62681285f29ff2a616f985aa8ee
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Mon Feb 21 23:36:50 2022 +1000
+
+    added new page template -WIP
+
+commit 5285d845d8d56a1735de466517f040b47033765c
+Author: samworth27 <samworth27@gmail.com>
+Date:   Mon Feb 21 15:32:06 2022 +1000
+
+    todays work
+
+commit 1d7b9877b4f0007b7d955af9205475ec6476c449
+Author: Sam Mitchell <Samworth27@gmail.com>
+Date:   Fri Feb 18 21:30:49 2022 +1000
+
+    Initial Commit
