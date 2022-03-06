@@ -1,29 +1,31 @@
-.contact{
-    /*Disable Social Bar */
-    // footer.page{
-    //     .contact-links{
-    //         display: none;
-    //     }
-    // }
+$colour-black:#121212;
+$colour-dark-2:rgb(8, 8, 8);
+$colour-white:#CCCDD4;    //Ghost
+$colour-accent:#00982e;
 
-    /*formatting social links in content area*/
-    article.contact-links{
-        flex-direction: column;
-        section{
-            display: flex;
-            align-items: center;
-        }
-        svg{
-            width: 20vw;
-        }
-        a{
-            width: fit-content;
-            text-decoration: none;
-        }
-        h2{
-            padding-left: 2em;
-            font-family: sans-serif;
-            text-transform: uppercase;
-        }
-    }
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Oxanium:wght@200&display=swap');
+$font-menu:'Audiowide', cursive;
+$font-title:'Bungee Hairline', cursive;
+$sans-serif:'Oxanium', sans-serif;
+$serif:'Oxanium', serif;
+$cursive:'Oxanium', 'Anton', cursive;
+
+.card {
+    width: 100%;
+    padding: 1em;
+}
+form {
+    padding: 0.5em;
+}
+input, #message {
+    background-color: $colour-black;
+    color:white;
+}
+input {
+    width: 100%;
+    max-width: 500px;
+}
+#message {
+    height: 20vh;
+    width: 100%;
 }

@@ -40,18 +40,22 @@ $cursive:'Oxanium', 'Anton', cursive;
 body {
     background-color: $colour-black;
 
+    a {
+        text-decoration: none;
+    }
+
     main {
+
+        color: $colour-white;
 
         h1{
             font-family: $font-title;
-            color: $colour-white;
             font-size: auto;
             // font-weight: 200;
             padding-bottom: 0;
         }
 
-        h2{
-            color: $colour-white;
+        h2{ 
             font-family: $sans-serif;
             font-size: auto;
             font-weight: 400;
@@ -86,7 +90,6 @@ body {
     a{
         font-family: $font-menu;
         color: $colour-white;
-        text-decoration: none;
         font-size: 3vw;
     }
 
@@ -131,10 +134,18 @@ footer.page {
 .card {
     @include depth-1;
     margin: 1em 0;
+    font-family: $sans-serif;
     //border: white;
     //border-style: groove;
     p {
         padding: 1em;
+    }
+    a {
+        display: block;
+        text-align: center;
+        color: $colour-white;
+        font-family: $sans-serif;
+        padding-bottom: 1em;
     }
 }
 

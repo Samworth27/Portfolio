@@ -1,2 +1,2 @@
 Contact Form
-Links in Social Bar
+Resume on title card
