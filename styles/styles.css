@@ -44,6 +44,21 @@ body .accent {
   text-decoration: underline;
 }
 
+.button {
+  background-color: #2a2a2a;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  position: relative;
+  z-index: 2;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2em auto;
+  border-radius: 20px;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
 .page {
   background-color: #080808;
 }
@@ -59,9 +74,9 @@ body .accent {
 }
 
 .hero {
-  background-color: #232323;
-  -webkit-box-shadow: 0 0 5px black;
-          box-shadow: 0 0 5px black;
+  background-color: #2a2a2a;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
   position: relative;
   z-index: 2;
 }
@@ -135,9 +150,9 @@ hr {
 }
 
 .dp2 {
-  background-color: #232323;
-  -webkit-box-shadow: 0 0 5px black;
-          box-shadow: 0 0 5px black;
+  background-color: #2a2a2a;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
   position: relative;
   z-index: 2;
 }

@@ -23,8 +23,8 @@ $cursive:'Oxanium', 'Anton', cursive;
 }
 
 @mixin depth-2 {
-    background-color: scale-color($colour-black,$lightness:7%);;
-    box-shadow: 0 0 5px black;
+    background-color: scale-color($colour-black,$lightness:10%);;
+    box-shadow: 0 0 10px black;
     position: relative;
     z-index: 2;
 }
@@ -81,6 +81,14 @@ body {
     }
 }
 
+.button {
+    @include depth-2();
+    width: fit-content;
+    margin: 2em auto;
+    border-radius: 20px;
+    padding: 1em;
+    text-transform: uppercase;
+}
 
 .page {
     background-color: $colour-dark-2;
